@@ -29,8 +29,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-#AUTH_USER_MODEL = 'authenticat.User'
-
 AUTH_USER_MODEL = 'authentication.User'
 # Application definition
 
@@ -43,12 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework_simplejwt.token_blacklist',
     'authentication',
-    # 'authenticat',
-    # 'rest_auth',
-    # 'django.contrib.sites',
-    # 'allauth',
-    # 'allauth.account',
-    # 'rest_auth.registration',
     'rest_framework',
     'drf_yasg',
 ]
@@ -117,6 +109,21 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+    # 'default': {
+
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+    #     'NAME': 'postgres',
+
+    #     'USER': 'postgres',
+
+    #     'PASSWORD': 'postgres',
+
+    #     'HOST': 'localhost',
+
+    #     'PORT': '5432',
+
+    # }
 }
 
 
